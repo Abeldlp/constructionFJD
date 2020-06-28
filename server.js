@@ -50,6 +50,7 @@ app.post("/api/message", (req, res) => {
 
 const PORT = process.env.PORT || 8000;
 
+//Sending static file
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
